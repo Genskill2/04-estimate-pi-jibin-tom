@@ -44,17 +44,17 @@ float mc_pi(int n){
  float x,y,d,ret;
  int count_c=0;
   
-  for(int i=0;i<=n;i++){
-    x=frandom();
-    y=frandom();
+  for(int i=0;i<n;i++){
+    x = andom();
+    y = frandom();
     
-    d=sqrt(x*x + y*y);
+    d = sqrt(x*x + y*y);
     
     if(d<=1){
       count_c++;
     }
   }
-   ret = 4*count_c/n;
+   ret = 4*(count_c/n);
   return ret;
 }
   
