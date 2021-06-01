@@ -39,5 +39,28 @@ int main(void) {
   }
 }
 
+float mc_pi(int n){
+  
+ float x,y,d,ret;
+ int count_c=0;
+  
+  for(int i=0;i<=n;i++){
+    x=frandom();
+    y=frandom();
+    
+    d=sqrt(x*x + y*y);
+    
+    if(d<=1){
+      count_c++;
+    }
+  }
+   ret = count_c/n;
+  return ret;
+}
+  
+  
+  
+  
+
 
 
