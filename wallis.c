@@ -28,8 +28,8 @@ int main(void) {
 float wallis_pi(int n){
   float p=1;
   for(int i=1;i<=n;i++){
-    p*=2*((4*i*i)/(4*i*i-1));
+    p*=(4*i*i)/(4*i*i-1);
   }
-  return p;  
+  return p*2;  
 }
     
