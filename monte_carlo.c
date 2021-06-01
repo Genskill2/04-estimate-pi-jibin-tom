@@ -54,7 +54,7 @@ float mc_pi(int n){
       count_c = count_c + 1;
     }
   }
-   ret = 4.0*(count_c/n);
+   ret = 4.0*(count_c/(float)n);
   return ret;
 }
   
