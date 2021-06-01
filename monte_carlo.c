@@ -50,11 +50,11 @@ float mc_pi(int n){
     
     d = sqrt(x*x + y*y);
     
-    if(d<1){
+    if(d < 1.0){
       count_c = count_c + 1;
     }
   }
-   ret = 4*(count_c/n);
+   ret = 4.0*(count_c/n);
   return ret;
 }
   
