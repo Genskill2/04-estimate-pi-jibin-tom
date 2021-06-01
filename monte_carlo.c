@@ -42,16 +42,16 @@ int main(void) {
 float mc_pi(int n){
   
  float x,y,d,ret;
- int count_c=0;
+ int i,count_c=0;
   
-  for(int i=0;i<n;i++){
-    x = andom();
+  for(i=0;i<n;i++){
+    x = frandom();
     y = frandom();
     
     d = sqrt(x*x + y*y);
     
-    if(d<=1){
-      count_c++;
+    if(d<1){
+      count_c = count_c + 1;
     }
   }
    ret = 4*(count_c/n);
